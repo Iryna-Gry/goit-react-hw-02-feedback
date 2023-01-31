@@ -1,16 +1,14 @@
+import { Container } from 'components/container/Container.styled';
+import { FirstLetter, LogoTitle } from 'components/logo';
+import { Feedback } from 'components/feedback/Feedback';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Container>
+      <LogoTitle href="#">
+        <FirstLetter>E</FirstLetter>xpresso <FirstLetter>C</FirstLetter>afe
+      </LogoTitle>
+      <Feedback></Feedback>
+    </Container>
   );
 };
