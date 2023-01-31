@@ -1,6 +1,10 @@
+.Button-container {
+  display: flex;
+  gap: 20px;
+}
 .Btn {
-  padding: 10px;
-  width: 150px;
+  padding: 8px;
+  width: 100px;
   color: aliceblue;
   border-radius: 20px;
   border-color: transparent;
@@ -9,6 +13,11 @@
   font-family: Sofia Sans, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
   text-transform: capitalize;
+}
+@media screen and (min-width: 768px) {
+  .Btn {
+    width: 150px;
+  }
 }
 .Btn-good {
   background-color: #37b182;
